@@ -1,0 +1,28 @@
+site_name: OSH-2021
+repo_name: OSH-2021/osh-2021.github.io
+repo_url: https://github.com/OSH-2021/osh-2021.github.io
+
+theme:
+  name: 'material'
+  language: 'zh'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.def_list
+  - mdx_truly_sane_lists
+  - toc:
+      permalink: true
+
+extra_css:
+  # Borrow CSS from Linux 101
+  - 'https://101.ustclug.org/css/extra.css'
+
+nav:
+  - 首页: README.md
+  - 实验零:
+    - 介绍: lab-0/README.md
