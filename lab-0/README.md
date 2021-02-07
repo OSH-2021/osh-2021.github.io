@@ -34,6 +34,6 @@ expect: 了解树莓派烧录系统使用的过程. Have fun :D
 
 ## 认识 Makefile
 
-这里有一篇 [OSH2020 助教 iBug 的博客] 初步介绍了 `Makefile`, 你还可以阅读搜索 "Makefile cheatsheet" 的结果以快速了解更多, 比如[这个 Cheat Sheet](https://bytes.usc.edu/cs104/wiki/makefile).
+这里有一篇 [OSH2020 助教 iBug 的博客](https://ibug.io/blog/2019/02/bootstrapping-make/) 初步介绍了 `Makefile`, 你还可以阅读搜索 "Makefile cheatsheet" 的结果以快速了解更多, 比如[这个 Cheat Sheet](https://bytes.usc.edu/cs104/wiki/makefile).
 
 expect: 能阅读别人写的 Makefile.
