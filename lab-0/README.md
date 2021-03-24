@@ -6,15 +6,15 @@ Lab 0 这并非正式实验，不会计入实验分，但请大家了解、学�
 
 ## Linux 环境
 
-如果你的主力系统是 Linux，~欢迎加入 LUG~可以跳过这个部分。
+如果你的主力系统是 Linux，<del>欢迎你加入 LUG</del>你可以跳过这个部分。
 
 如果你内存充足、或者不太想在物理机上安装 Linux，可以尝试使用虚拟机运行 Linux。具体可以参照[在 Windows 中使用虚拟机（By iBug）](https://ibug.io/cn/2019/02/setup-ubuntu-in-vmware/)、[在 macOS 中使用虚拟机（By Taoky）](https://blog.taoky.moe/2019-02-23/installing-os-on-vm.html)这两篇文章。
 
-如果你想尝试把本地系统换成 Linux、或者双系统，可以 TODO
+如果你想尝试把本地系统换成 Linux、或者双系统，可以参考[各个 Linux 发行版的介绍](https://101.lug.ustc.edu.cn/Ch01/#linux-distributions)，选择合适的发行版进行安装。这里推荐根据 [Arch 安装教程](<https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>)安装一次 Arch Linux，这样你就可以详细地了解 Linux 各部分的组成。
 
-Linux 最基本的使用可以从 [LUG Linux 101](https://101.lug.ustc.edu.cn/) 开始学习。
+Linux 最基本的使用也可以从 [LUG Linux 101](https://101.lug.ustc.edu.cn/) 开始学习。
 
-如果想了解更多有关 Linux 的技巧，可以看 [Debian 教程](https://www.debian.org/doc/manuals/debian-reference/ch01.zh-cn.html)或者 [Arch Linux 文章索引](https://wiki.archlinux.org/index.php/General_recommendations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))。
+如果想了解更多有关 Linux 的技巧，可以看 [Debian 教程](https://www.debian.org/doc/manuals/debian-reference/ch01.zh-cn.html)或者 [Arch Linux 文章索引](<https://wiki.archlinux.org/index.php/General_recommendations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>)。
 
 预期结果：有一个可用的 Linux 工作环境（不限于本地），和基本的 Linux 使用能力。
 
@@ -36,7 +36,7 @@ Git 官方文档 [Pro Git book](https://git-scm.com/book/en/v2) 不太推荐作�
 
 ## 玩一玩 Raspberry Pi
 
-树莓派拿了干嘛？能吃？~能吃灰？~
+树莓派拿了干嘛？能吃？<del>能吃灰？</del>
 
 如果你的树霉派正在躺着吃灰，可以参考[一名助教的博客](https://yyw.moe/2021/01/18/Raspberry-pi-init/)，烧个系统进去并探索一番。
 
