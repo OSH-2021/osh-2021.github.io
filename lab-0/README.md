@@ -22,7 +22,11 @@ Linux 最基本的使用也可以从 [LUG Linux 101](https://101.lug.ustc.edu.cn
 
 参考 [Rust 安装页面](https://www.rust-lang.org/tools/install)，使用 Rustup 在本地快速安装 Rust 工具链。
 
-然后体验 Cargo TODO
+还没接触过 Rust 的同学可以看看 [Rust by Example](https://doc.rust-lang.org/rust-by-example/)，这是一个关于 Rust 的教程。
+
+之后我们会放弃使用 Rust 标准库、即加入 `#![no_std]` 宏，因为我们要在树莓派上构造一个完全不依赖 Rust 标准库的裸金属（Bare Metal）系统。可以看看 [Writing an OS in Rust](https://os.phil-opp.com/) 和 [Rust Raspi OS](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)。
+
+预期结果：能理解 Rust 的基本语法，编写 Rust 裸金属程序。
 
 ## 使用 Git
 
