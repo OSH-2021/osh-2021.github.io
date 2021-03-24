@@ -6,7 +6,7 @@ Lab 0 这并非正式实验，不会计入实验分，但请大家了解、学�
 
 ## Linux 环境
 
-如果你的主力系统是 Linux，~~欢迎加入 LUG~~可以跳过这个部分。
+如果你的主力系统是 Linux，~欢迎加入 LUG~可以跳过这个部分。
 
 如果你内存充足、或者不太想在物理机上安装 Linux，可以尝试使用虚拟机运行 Linux。具体可以参照[在 Windows 中使用虚拟机（By iBug）](https://ibug.io/cn/2019/02/setup-ubuntu-in-vmware/)、[在 macOS 中使用虚拟机（By Taoky）](https://blog.taoky.moe/2019-02-23/installing-os-on-vm.html)这两篇文章。
 
@@ -36,7 +36,7 @@ Git 官方文档 [Pro Git book](https://git-scm.com/book/en/v2) 不太推荐作�
 
 ## 玩一玩 Raspberry Pi
 
-树莓派拿了干嘛？能吃？~~能吃灰？~~
+树莓派拿了干嘛？能吃？~能吃灰？~
 
 如果你的树霉派正在躺着吃灰，可以参考[一名助教的博客](https://yyw.moe/2021/01/18/Raspberry-pi-init/)，烧个系统进去并探索一番。
 
