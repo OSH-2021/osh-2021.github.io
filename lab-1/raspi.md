@@ -37,7 +37,7 @@ sed -i -e "s/BOOT_UART=0/BOOT_UART=1/" bootcode.bin
 
 ### 串口连线
 
-图片 TBA
+![uart](assets/../../assets/uart.jpg)
 
 ### 串口客户端
 
