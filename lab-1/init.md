@@ -123,6 +123,8 @@ for item in $(./busybox --list)
   done
 ```
 
+注: 其中 `./busybox --list` 需要安装 `qemu-user` 才能在 x86 环境下成功执行.
+
 `rootfs/init`:
 
 ```shell
