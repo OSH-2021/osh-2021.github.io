@@ -8,7 +8,7 @@
 
 运行 QEMU: 需要图形界面
 
-可能的组合: 
+一些可能的组合: 
 
 - Windows 下安装 QEMU, 用 WSL2 编译 kernel
 - Linux 服务器编译 kernel, 安装 QEMU 并用 X11 转发图形界面
