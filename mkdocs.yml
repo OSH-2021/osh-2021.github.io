@@ -26,3 +26,8 @@ nav:
   - 首页: README.md
   - 实验零:
     - 介绍: lab-0/README.md
+  - 实验一:
+    - 介绍: lab-1/README.md
+    - 编译 Linux 内核: lab-1/kernel.md
+    - 构建初始内存盘: lab-1/init.md
+    - 在树莓派上运行 Linux 内核和 init (选做): lab-1/raspi.md
