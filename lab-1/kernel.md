@@ -52,7 +52,7 @@ KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n
 ```
 
-参考时间: 使用 Vlab 平台虚拟机(双核), time 统计时间. 即 45 min 左右.
+参考时间: 使用 Vlab 平台虚拟机(双核), time 统计时间. 未裁剪内核约 45 min.
 
 ```
 4407.53s user 513.19s system 181% cpu 45:04.30 total
