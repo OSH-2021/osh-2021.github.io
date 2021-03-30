@@ -61,7 +61,7 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n
 ```
 qemu-system-aarch64 \
   -kernel linux/arch/arm64/boot/Image \
-  -dtb tools/boot_utils/bcm2710-rpi-3-b.dtb \
+  -dtb tools/boot_utils/bcm2710-rpi-3-b-plus.dtb \
   -M raspi3 -m 1024 \
   -serial stdio \
   -append "rw loglevel=8"
@@ -73,15 +73,15 @@ qemu-system-aarch64 \
 
 如果不希望看到太多 log, 可以将 loglevel 降低 (最低为 0).
 
-## Extra (非必做)
+## 运行 RaspiOS (非必做)
 
-尝试在QEMU中用自己编译的内核运行 raspios, [镜像下载](https://mirrors.ustc.edu.cn/raspberry-pi-os-images/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip) 
+尝试在QEMU中用自己编译的内核运行 RaspiOS, [镜像下载](https://mirrors.ustc.edu.cn/raspberry-pi-os-images/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip) 
 
 ```
 qemu-img resize ../2020-08-20-raspios-buster-arm64-lite.img 2G
 qemu-system-aarch64 \
   -kernel linux/arch/arm64/boot/Image \
-  -dtb tools/boot_utils/bcm2710-rpi-3-b.dtb \
+  -dtb tools/boot_utils/bcm2710-rpi-3-b-plus.dtb \
   -M raspi3 -m 1024 \
   -serial stdio \
   -append "rw loglevel=8 root=/dev/mmcblk0p2 fsck.repair=yes net.ifnames=0 rootwait memtest=1" \

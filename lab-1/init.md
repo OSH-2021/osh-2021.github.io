@@ -31,7 +31,7 @@ find . | cpio --quiet -H newc -o | gzip -9 -n > ../initrd.cpio.gz
 qemu-system-aarch64 \
   -kernel linux/arch/arm64/boot/Image \
   -initrd initrd.cpio.gz \
-  -dtb tools/boot_utils/bcm2710-rpi-3-b.dtb \
+  -dtb tools/boot_utils/bcm2710-rpi-3-b-plus.dtb \
   -M raspi3 -m 1024 \
   -serial stdio \
   -append "rw loglevel=8"
