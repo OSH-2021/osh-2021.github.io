@@ -31,19 +31,25 @@ mv linux-raspberrypi-kernel_1.20210108-1 linux
 tar -xf tools.gz
 ```
 
-## 编译默认配置
+## 编译内核
 
 生成默认配置:
 
 ```
 cd linux
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcmrpi3_defconfig
+KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcmrpi3_defconfig
+```
+
+使用图形界面编辑配置, 如果不熟悉选项, 推荐先编译一次未裁剪的内核:
+
+```
+KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 ```
 
 编译时加上参数 `-j n`, 根据官方说法, `n` 取你的机器核数*1.5.
 
 ```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n
+KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n
 ```
 
 参考时间: 使用 Vlab 平台虚拟机(双核), time 统计时间. 即 45 min 左右.
@@ -56,7 +62,7 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n
 
 *如果想在树莓派中运行, 参考后续章节「在树莓派上运行 Linux 内核和 init (选做)」*
 
-在QEMU中运行编译好的内核
+在 QEMU 中运行编译好的内核.
 
 ```
 qemu-system-aarch64 \
@@ -75,7 +81,7 @@ qemu-system-aarch64 \
 
 ## 运行 RaspiOS (非必做)
 
-尝试在QEMU中用自己编译的内核运行 RaspiOS, [镜像下载](https://mirrors.ustc.edu.cn/raspberry-pi-os-images/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip) 
+尝试在 QEMU 中用自己编译的内核运行 RaspiOS, [镜像下载](https://mirrors.ustc.edu.cn/raspberry-pi-os-images/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip). <del>推荐用未裁剪内核玩耍.</del>
 
 ```
 qemu-img resize ../2020-08-20-raspios-buster-arm64-lite.img 2G
