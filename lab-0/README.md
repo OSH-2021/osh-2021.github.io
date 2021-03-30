@@ -38,7 +38,7 @@ Git 官方文档 [Pro Git book](https://git-scm.com/book/en/v2) 不太推荐作�
 
 预期结果：能用 Git 对自己写的代码进行简单版本控制，使用 Commit 正确的文件并留下恰当的 Commit message，能在 GitHub 上进行多人合作。
 
-要求：同学创建个人私有仓库，并邀请 OSH-2021-TA 加为协作者。
+要求：同学在 GitHub 上创建个人私有仓库，并邀请 OSH-2021-TA 加为协作者。
 
 ## 玩一玩 Raspberry Pi
 
