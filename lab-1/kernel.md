@@ -2,7 +2,19 @@
 
 实验用树莓派型号为 raspberrypi 3b+, 并要求编译 64bit 内核.
 
-环境以 Ubuntu 20.04(x86) 为例 (其他系统和架构请自行安装所需要的环境).
+## 环境准备
+
+编译 kernel: Linux 物理机/虚拟机/WSL
+
+运行 QEMU: 需要图形界面
+
+可能的组合: 
+
+- Windows 下安装 QEMU, 用 WSL2 编译 kernel
+- Linux 服务器编译 kernel, 安装 QEMU 并用 X11 转发图形界面
+- Vlab 使用包含桌面的 Ubuntu 20.04
+
+此实验文档以包含桌面的 Ubuntu 20.04 (x86) 为例 (其他系统和架构请自行安装所需要的环境).
 
 ## 配置交叉编译环境
 
