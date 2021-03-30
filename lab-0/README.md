@@ -38,13 +38,15 @@ Git 官方文档 [Pro Git book](https://git-scm.com/book/en/v2) 不太推荐作�
 
 预期结果：能用 Git 对自己写的代码进行简单版本控制，使用 Commit 正确的文件并留下恰当的 Commit message，能在 GitHub 上进行多人合作。
 
+要求：同学创建个人私有仓库，并邀请 OSH-2021-TA 加为协作者。
+
 ## 玩一玩 Raspberry Pi
 
 树莓派拿了干嘛？能吃？<del>能吃灰？</del>
 
 如果你的树霉派正在躺着吃灰，可以参考[一名助教的博客](https://yyw.moe/2021/01/18/Raspberry-pi-init/)，烧个系统进去并探索一番。
 
-预期结果：了解树莓派系统烧录、使用的过程。Have fun :D
+预期结果：了解树莓派系统烧录、使用的过程，观察树莓派启动的过程及其和主流计算机引导入系统的区别。Have fun :D
 
 ## 认识 Makefile
 
