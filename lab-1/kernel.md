@@ -1,13 +1,19 @@
-# 编译 Linux 内核
+# 编译并运行 Linux 内核
 
 实验用树莓派型号为 raspberrypi 3b+, 并要求编译 64bit 内核.
 
-## 配置交叉编译环境
+环境以 Ubuntu 20.04(x86) 为例 (其他系统和架构请自行安装所需要的环境).
 
-以 Ubuntu 20.04(x86) 为例 (其他系统和架构请自行安装所需要的环境).
+## 配置交叉编译环境
 
 ```
 sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-arm64
+```
+
+## 安装 QEMU
+
+```
+sudo apt install qemu qemu-user qemu-system-arm
 ```
 
 ## 下载并解压源码
