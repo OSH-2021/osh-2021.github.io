@@ -4,7 +4,7 @@
 
 ## 配置交叉编译环境
 
-以 Ubuntu 20.04 为例 (其他系统请自行安装所需要的环境).
+以 Ubuntu 20.04(x86) 为例 (其他系统和架构请自行安装所需要的环境).
 
 ```
 sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-arm64
