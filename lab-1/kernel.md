@@ -32,7 +32,7 @@ sudo apt install qemu qemu-user qemu-system-arm
 
 本次实验采用的[源码地址](https://github.com/raspberrypi/linux/archive/refs/tags/raspberrypi-kernel_1.20210108-1.tar.gz)
 
-由于从 GitHub 直接下载速度缓慢, 可以从[这里](TBA)下载.
+由于从 GitHub 直接下载速度缓慢, 可以从[这里](https://ftp.lug.ustc.edu.cn/misc/osh/raspberrypi-kernel_1.20210108-1.tar.gz)下载.
 
 解压:
 
@@ -43,7 +43,7 @@ mv linux-raspberrypi-kernel_1.20210108-1 linux
 
 ## 下载其他文件
 
-下载 [tools.tar.gz](tba) 里面包含在 QEMU 以及树莓派上运行所需文件. 解压:
+下载 [tools.tar.gz](https://ftp.lug.ustc.edu.cn/misc/osh/tools.tar.gz) 里面包含在 QEMU 以及树莓派上运行所需文件和 3 个测试程序. 解压:
 
 ```
 tar -xf tools.gz
