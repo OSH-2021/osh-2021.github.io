@@ -43,7 +43,9 @@ mv linux-raspberrypi-kernel_1.20210108-1 linux
 
 ## 下载其他文件
 
-下载 [tools.tar.gz](https://ftp.lug.ustc.edu.cn/misc/osh/tools.tar.gz) 里面包含在 QEMU 以及树莓派上运行所需文件和 3 个测试程序. 解压:
+下载 [tools.tar.gz](https://ftp.lug.ustc.edu.cn/misc/osh/tools.tar.gz) 里面包含在 QEMU 以及树莓派上运行所需文件和 3 个测试程序. 
+
+解压:
 
 ```
 tar -xf tools.gz
@@ -58,13 +60,19 @@ cd linux
 KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcmrpi3_defconfig
 ```
 
-使用图形界面编辑配置, 如果不熟悉选项, 推荐先编译一次未裁剪的内核:
+使用图形界面编辑配置 (如果不熟悉选项, 推荐先编译一次未裁剪的内核), 如果对选项有疑问可以多使用 `?` 查看说明.
 
 ```
 KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 ```
 
-编译时加上参数 `-j n`, 根据官方说法, `n` 取你的机器核数*1.5.
+编译:
+
+```
+KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+```
+
+编译时可以加上参数 `-j n` 以加快速度, 根据官方说法, `n` 应取你的机器核数*1.5:
 
 ```
 KERNEL=kernel8 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j n

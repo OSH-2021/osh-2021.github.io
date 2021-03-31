@@ -106,7 +106,7 @@ crw------- 1 root root 1, 3 Mar  1 17:10 null
 
 BusyBox 是一个将许多常用 Unix 命令行工具打包进一个二进制文件的项目，在嵌入式系统等存储空间有限的环境中非常常见。你可以选择使用 BusyBox 提供的工具来编写你的 init 程序，并打包 initrd.
 
-BusyBox 官方没有提供编译好的 arm64 版本. 方便起见可以直接下载[助教编译好的 binary](https://ftp.lug.ustc.edu.cn/misc/osh/busybox). [源码下载](https://busybox.net/downloads/busybox-1.32.1.tar.bz2), 也可以自行编译.
+BusyBox 官方没有提供编译好的 arm64 版本. 方便起见可以直接下载[助教编译好的 binary](https://ftp.lug.ustc.edu.cn/misc/osh/busybox). 也可以自行编译, [源码下载](https://busybox.net/downloads/busybox-1.32.1.tar.bz2).
 
 ### 制作 initrd
 
@@ -132,12 +132,12 @@ for item in $(./busybox --list)
 /bin/sh
 ```
 
-记得给这个 init 文件加上执行权限
+记得给这个 `init` 文件加上执行权限
 
 ```
 chmod +x init
 ```
 
-按照前面的教程将 rootfs/ 目录打包为 initrd.cpio.gz，并使用 QEMU 启动，你就有 shell 可以玩了 :D
+按照前面的教程将 `rootfs/` 目录打包为 `initrd.cpio.gz`，并使用 QEMU 启动，你就有 `shell` 可以玩了 :D
 
 hint: 有 `/bin/mknod`
