@@ -1,7 +1,12 @@
 # 在树莓派上运行 Linux 内核和 init (选做)
 
-## 硬件设备额外要求
+## 硬件设备要求
 
+
+- 一台计算机；
+- 一个 Raspberry Pi 3 Model B+ （含电源）；
+- 一张 2G 以上的 microSD 卡；
+- 一个 microSD 读卡器；
 - HDMI 线和屏幕
 - CP2102 USB 转串口模块
 
