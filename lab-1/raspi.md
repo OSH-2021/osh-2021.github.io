@@ -10,11 +10,11 @@
 - HDMI 线和屏幕
 - CP2102 USB 转串口模块
 
-由于需求额外硬件，在树莓派实体机上运行为选做，欢迎感兴趣的同学积极尝试。如果选做此项请在实验报告中说明，批改时评测环境将变为树莓派实体机 (如果在实体机上和预期表现不符会再用QEMU评测). <del>虽然相比 QEMU 没有额外加分, 但是助教们会给你鼓掌掌.</del>
+由于需求额外硬件，在树莓派实体机上运行为选做，欢迎感兴趣的同学积极尝试。如果选做此项请在实验报告中说明，批改时评测环境将变为树莓派实体机 (如果在实体机上和预期表现不符会再用 QEMU 评测). <del>虽然相比 QEMU 没有额外加分, 但是助教们会给你鼓掌掌.</del>
 
 ## 注意事项
 
-建议阅读树莓派官方对于串口的[说明](https://www.raspberrypi.org/documentation/configuration/uart.md). 通过 GPIO 连接的是 mini UART, 对应设备 `/dev/ttyS0` .
+由于树莓派调试相对 QEMU 更为烦琐, 推荐配合使用 QEMU 和树莓派. 需要注意串口相关的区别, 建议阅读树莓派官方对于串口的[说明](https://www.raspberrypi.org/documentation/configuration/uart.md). 通过 GPIO 连接的是 mini UART, 对应设备 `/dev/ttyS0` .
 
 ## 流程
 
@@ -24,6 +24,16 @@
 4. `umount` 该分区, 再取出 SD卡
 5. SD 卡放入树莓派, 连接显示器和串口模块, 打开串口终端 (如 Putty), 再接通电源.
 6. 观察显示器和串口终端上的输出.
+
+## config.txt 内容说明
+
+`tools/boot_utils/config.txt` 内容:
+
+```
+arm_64bit=1                             #启动 64-bit 内核, 默认 kernel=kernel8.img
+initramfs initrd.cpio.gz followkernel   #设置 initrd 文件名, 设置加载地址为 followkernel
+enable_uart=1                           #开启 mini UART
+```
 
 ## 串口
 
@@ -54,3 +64,4 @@ Speed 设为 115200, Serial line 设为 `/dev/ttyUSB0`, Connection type 为 Seri
 
 - [bootmodes](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/README.md)
 - [uart](https://www.raspberrypi.org/documentation/configuration/uart.md)
+- [config.txt-boot](https://www.raspberrypi.org/documentation/configuration/config-txt/boot.md)
