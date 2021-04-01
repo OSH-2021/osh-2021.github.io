@@ -22,14 +22,14 @@
 sudo apt install nasm qemu make
 ```
 
-然后从此处获得代码：[bootloader.zip](#todo)
+然后从此处获得代码：[bootloader-x86.tar.xz](https://ftp.lug.ustc.edu.cn/misc/osh/bootloader-x86.tar.xz) 并解压获得源码。
 
 这份代码的入口是 `boot.asm` 文件，之后会运行 `loader.asm` 文件。`kernel.asm` 不会被运行。
 其余两个 `fat12.inc` 和 `log.inc` 文件可以类比做 C 中的头文件、会被宏内连到前面的两个文件中。
 此代码带有一份 `Makefile`，记载了如何完成编译和测试。
-请使用 `make` 来运行 qemu 以模拟 boot 的过程、观察到 bootloader 运行的状况。
+请阅读 `Makefile` 内容，使用正确的指令完成编译。（1 分）
 
-现在，请从以下几个问题中选择 2 个（2 分），查阅相关资料后简要回答：
+现在，请从以下几个问题中选择 2 个（共 1 分），查阅相关资料后简要回答：
 
 - `xor ax, ax` 使用了异或操作 `xor`，这是在干什么？这么做有什么好处呢？
 - `jmp $` 又是在干什么？
@@ -48,5 +48,5 @@ sudo apt install nasm qemu make
 
 - 这些代码是不完全的，尝试补全这些代码，使得 `kernel.asm` 可以被运行；
 - 同样是尝试补全这些代码，使得系统进入长模式（long mode）；
-- 又同样是尝试补全这些代码，使得系统的运行可以跳转到你增添的 C/C++/Rust 代码上；
+- 又同样是尝试补全这些代码，使得系统的运行可以跳转到你自行增添的 C/C++/Rust 代码上；
 - 或者自行实现另一套的 UEFI Boot；
