@@ -22,6 +22,8 @@ extra_css:
   # Borrow CSS from Linux 101
   - 'https://101.ustclug.org/css/extra.css'
 
+edit_uri: edit/main/
+
 nav:
   - 首页: README.md
   - 实验�:
