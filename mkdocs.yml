@@ -26,10 +26,10 @@ edit_uri: edit/main/
 
 nav:
   - 首页: README.md
-  - 实验�:
-    - 啥也没有: fool/README.md
-    - "": fool/empty.md
-    - "": fool/empty.md
+#  - 实验�:
+#    - 啥也没有: fool/README.md
+#    - "": fool/empty.md
+#    - "": fool/empty.md
   - 实验零:
     - 介绍: lab-0/README.md
   - 实验一:
