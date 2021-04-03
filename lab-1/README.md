@@ -72,4 +72,4 @@
 6. 查阅 `PXE` 的资料，用自己的话描述它启动的过程。
 7. 查阅 `GRUB` 的资料，用自己的话描述它启动的过程。
 8. 说明 `UEFI Boot` 的流程，截图指出你的某一个系统的 `EFI` 分区中包含哪些文件。
-9. 为什么现在手机、树莓派等家用 arm 设备不从 UEFI 启动？（[RPI4 UEFI](https://github.com/pftf/RPi4/) 是一个试验性质的树莓派 UEFI 固件）
+9. 为什么现在手机、树莓派等家用 arm 设备不像通用 PC 一样使用 UEFI 启动？（[RPI4 UEFI](https://github.com/pftf/RPi4/) 是一个试验性质的树莓派 UEFI 固件）
