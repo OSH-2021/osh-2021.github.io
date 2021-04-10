@@ -38,3 +38,4 @@ nav:
     - 构建初始内存盘: lab-1/init.md
     - 在树莓派上运行 Linux 内核和 init (选做): lab-1/raspi.md
     - 初识 Boot: lab-1/boot.md
+  - 大作业: xlab/README.md
