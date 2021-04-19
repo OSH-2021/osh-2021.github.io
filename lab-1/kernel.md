@@ -126,5 +126,5 @@ Have fun :D
 
 ## 参考资料
 
-1. 树莓官方文档：[编译内核](https://www.notion.so/Lab-1-Linux-53d010e1486d4fc180535fcf27ec5c79#e5ba9eda59124591a573a39c334d8fa1) [配置内核](https://www.notion.so/Lab-1-Linux-53d010e1486d4fc180535fcf27ec5c79#8e7ab2b415324a8791e14ba06f457a04)
+1. 树莓官方文档：[编译内核](https://www.raspberrypi.org/documentation/linux/kernel/building.md) [配置内核](https://www.raspberrypi.org/documentation/linux/kernel/configuring.md)
 2. [Debian on QEMU’s Raspberry Pi 3 model](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
