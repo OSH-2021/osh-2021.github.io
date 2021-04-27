@@ -12,7 +12,7 @@
 | No  | Date   | Task              | Due                                    |
 | --- | ------ | ----------------- | -------------------------------------- |
 | #0  | -      | 大作业            | -                                      |
-| #1  | Apr 3  | Lab 1             | 23:59, Sunday, <del>Apr 25</del> May 2 |
+| #1  | Apr 3  | [Lab 1](./lab-1)  | 23:59, Sunday, <del>Apr 25</del> May 2 |
 | #2  | -      | 大作业-调研报告   | 23:59, Sunday, Apr 11                  |
 | #3  | -      | 大作业-可行性报告 | 23:59, Sunday, Apr 18                  |
-| #4  | Apr 27 | Lab 2             | 23:59, Sunday, May 30                  |
+| #4  | Apr 27 | [Lab 2](./lab-2)  | 23:59, Sunday, May 30                  |
