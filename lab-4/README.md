@@ -1,6 +1,6 @@
 # Lab 4
 
-PDF 版本如下：![lab4](assets/实验4.pdf)
+PDF 版本如下：[lab4](assets/实验4.pdf)
 
 OCR 版本如下：
 
