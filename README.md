@@ -16,4 +16,5 @@
 | #2  | -      | 大作业-调研报告   | 23:59, Sunday, Apr 11                   |
 | #3  | -      | 大作业-可行性报告 | 23:59, Sunday, Apr 18                   |
 | #4  | Apr 27 | [Lab 2](./lab-2)  | 23:59, Sunday, <del>May 30</del> June 6 |
-| #5  | Jun 6  | [Lab 3](./lab-3)  | 23:59, Sunday, Jun 27 |
+| #5  | Jun 6  | [Lab 3](./lab-3)  | 23:59, Sunday, Jun 27                   |
+| #5  | Jun 21 | [Lab 4](./lab-4)  | 23:59, Sunday, July 15                  |
